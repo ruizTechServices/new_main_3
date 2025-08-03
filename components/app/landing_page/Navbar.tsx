@@ -37,7 +37,7 @@ export default function NavBar({ items }: NavBarProps) {
         {/* Call to action */}
         <div className="hidden md:block">
           <Button asChild>
-            <Link href="/signup">Get Started</Link>
+            <Link href="/login">Get Started</Link>
           </Button>
         </div>
 
