@@ -6,10 +6,8 @@ if (!apiKey) {
 }
 
 const pc = new Pinecone({ apiKey });
-// You may also want to explicitly pass projectName, depending on your Pinecone org/setup:
-// const pc = new Pinecone({ apiKey, projectName: process.env.PINECONE_PROJECT_NAME });
 
-const index = pc.index('24Hourgpt');
+const index = pc.index('chatbot-main-3');
 
 export default index;
 export { pc };
