@@ -11,6 +11,7 @@ import anthropicClient from '../lib/clients/anthropic/client'
 import huggingfaceClient from '../lib/clients/huggingface/client'
 import xaiClient from '../lib/clients/xai/client'
 import pineconeClient from '../lib/clients/pinecone/client'
+import { createClient as supabaseClient } from '../lib/clients/supabase/client'
 
 const tests: Array<{ name: string; client: any; keyEnv: string }> = [
     { name: 'Google (Gemini)', client: googleClient, keyEnv: 'GEMINI_API_KEY' },
@@ -20,6 +21,7 @@ const tests: Array<{ name: string; client: any; keyEnv: string }> = [
     { name: 'HuggingFace', client: huggingfaceClient, keyEnv: 'HF_API_KEY' },
     { name: 'xAI', client: xaiClient, keyEnv: 'XAI_API_KEY' },
     { name: 'Pinecone', client: pineconeClient, keyEnv: 'PINECONE_API_KEY' },
+    { name: 'Supabase', client: supabaseClient, keyEnv: 'SUPABASE_API_KEY' },
 ]
 
 console.log('🧠 Unified client initialization test')
