@@ -10,6 +10,7 @@ import mistralClient from '../lib/clients/mistral/client'
 import anthropicClient from '../lib/clients/anthropic/client'
 import huggingfaceClient from '../lib/clients/huggingface/client'
 import xaiClient from '../lib/clients/xai/client'
+import pineconeClient from '../lib/clients/pinecone/client'
 
 const tests: Array<{ name: string; client: any; keyEnv: string }> = [
     { name: 'Google (Gemini)', client: googleClient, keyEnv: 'GEMINI_API_KEY' },
@@ -17,7 +18,8 @@ const tests: Array<{ name: string; client: any; keyEnv: string }> = [
     { name: 'Mistral', client: mistralClient, keyEnv: 'MISTRAL_API_KEY' },
     { name: 'Anthropic', client: anthropicClient, keyEnv: 'ANTHROPIC_API_KEY' },
     { name: 'HuggingFace', client: huggingfaceClient, keyEnv: 'HF_API_KEY' },
-  { name: 'xAI', client: xaiClient, keyEnv: 'XAI_API_KEY' },
+    { name: 'xAI', client: xaiClient, keyEnv: 'XAI_API_KEY' },
+    { name: 'Pinecone', client: pineconeClient, keyEnv: 'PINECONE_API_KEY' },
 ]
 
 console.log('🧠 Unified client initialization test')
